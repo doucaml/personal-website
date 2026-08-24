@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
-{% block style %}style/index.css{% endblock style %}
+{% block style %}{{ get_url(path="css/index.css") }}{% endblock style %}
 
 {% block title %}Accueil{% endblock title %}
 
 {% block content %}
     <section>
-        <p>Bonjour je m'appelle Mohamed Doucouré, bienvenue sur mon coin d'internet</p>
+        <p>Bonjour, je m'appelle Mohamed Doucouré, bienvenue sur mon coin d'internet</p>
     </section>
 
     <section>

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block style %}style/main.css{% endblock style %}
+{% block style %}{{ get_url(path="css/main.css") }}{% endblock style %}
 
 {% block title %}{{ page.title }}{% endblock title %}
 

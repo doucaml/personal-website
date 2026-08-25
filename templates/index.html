@@ -1,17 +1,36 @@
 {% extends "base.html" %}
 
-{% block style %}{{ get_url(path="css/index.css") }}{% endblock style %}
+{% block style %} {{ get_url(path="css/index.css") }} {% endblock style %}
 
-{% block title %}Accueil{% endblock title %}
+{% block title %} {{ section.title }} {% endblock title %}
 
-{% block content %}
+{%block content %}
     <section>
-        <p>Bonjour, je m'appelle Mohamed Doucouré, bienvenue sur mon coin d'internet</p>
+        {{ section.content | safe }}
     </section>
 
     <section>
-        <a href="http://github.com/doucaml">Github</a>
-        <a href="http://linkedin.com/in/mohamedoucoure">Linkedin</a>
-        <a href="http://substack.com/@doucaml">Substack</a>
+        <h2>Posts récents</h2>
+
+        {% set notes = get_section(path = "notes/_index.md") %}
+            {% if notes.pages %}
+            <div>
+                {{ <section.recents {...notes} /> }}
+            </div>
+        {% endif %}
+
+        {% set articles = get_section(path = "articles/_index.md") %}
+        {% if articles.pages %}
+            <div>
+                {{ <section.recents {...articles} /> }}
+            </div>
+        {% endif %}
+
+        {% set essays = get_section(path = "essays/_index.md") %}
+            {% if essays.pages %}
+            <div>
+                {{ <section.recents {...essays} /> }}
+            </div>
+        {% endif %}
     </section>
 {% endblock content %}

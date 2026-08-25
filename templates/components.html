@@ -1,0 +1,26 @@
+{% component article.item(...page) %}
+<article class="article-item">
+    <a href="{{ page.permalink }}">{{ page.title }}</a>
+
+    <div>
+        <span>{{ page.date }}</span>
+        <span>•</span>
+        <span>{{ page.reading_time }} min</span>
+    </div>
+</article>
+{% endcomponent article.item %}
+
+{% component section.recents(...section) %}
+<h3>
+    <a href="{{ section.permalink }}">{{ section.title }}</a>
+</h3>
+
+<ul>
+    {% for page in section.pages[:3] %}
+    <li>
+        <span>{{ page.date }} -</span>
+        <a href="{{ page.permalink }}">{{ page.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endcomponent section.recents %}

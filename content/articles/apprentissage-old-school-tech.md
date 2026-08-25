@@ -1,0 +1,70 @@
++++
+title = "À la défense d'un apprentissage old school de l'ingénierie logicielle"
+draft = false
+date = "2026-05-26"
+slug = "apprentissage-old-school-du-genie-logiciel"
++++
+
+S'il y a bien une industrie disruptée par l'IA c'est celui qui, en partie, l'a engendré et façonné, l'ingénierie logiciel. Justement, l'explication de cette disruption se trouve peut-être là puisque ces concepteurs ont été au premier plan pour saisir son potentiel et l'adapter à la résolution de leur problématique. 
+
+Aux premières itérations des modèles et aux premières solutions d'assistance de code, la question se posait encore d'adopter ces outils ou non. Cette époque, pas si lointaine (la première version de Cursor, pionnière, date de 2023) est révolue. Aujourd'hui, coder en s'appuyant sur les outils basés sur les LLM n'est plus un choix mais une évidence à la limite de l'impératif dans le monde professionnel.
+
+Pourtant une certaine réticence à adopter ces technologies existe pour diverses raisons. Une des plus vives concernant la formation des développeurs. Peut on adopter ces outils lorsque l'on est à un stade d'apprentissage ? C'est la question dont va traiter cet article.
+
+## Écrire de bonnes specs et de bons tests
+
+Le métier de développeur est un métier en évolution constante. Cela s'explique en partie par la jeunesse du génie logiciel en tant que discipline. Une bonne partie du métier consiste à effectuer une veille technologique, pratique bien moins courante et essentielle dans d'autres domaines d'ingénierie. La dernière innovation qui bouscule les pratiques est donc l'intelligence artificielle générative et pour être plus précis les modèles de langage.
+
+La machine a une capacité de production de quantité de code supérieure à la notre et donc dans une logique purement quantitative, nous devrions lui déléguer cette tâche. Cela fait un amalgame problématique entre la quantité de code produit et la productivité. C'est symptomatique d'une époque de métriques, où l'on veut tout mesurer et estimer, dans une logique productiviste poussée à son extrême. Pourtant l'une des qualités longtemps louées des développeurs expérimentés est leur capacité à réduire le code autant que possible à son strict minimum, à trouver une juste milieu entre efficacité, simplicité mais également lisibilité. 
+
+Et dans la lignée de cette argumentaire, le deuxième discours émergent est qu'il est plus important maintenant d'écrire des spécifications clairs et de bons tests. Le plus important est de bien cadrer les agents en amont par une définition claire et suffisamment exhaustive. Mais comment avoir des spécifications clairs sans avoir une idée des contraintes systèmes ? Comment construire cette connaissance sans mettre les mains dans le code ? Ces connaissances nécessitent une certaine idée même très vague, une intuition, de ce à quoi va ressembler l'implémentation. Cette intuition s'acquiert par une expérience pratique et donc l'écriture de code. Il n'y a pas de substitut à l'expérience dans ces cas de figure. Aucun guide pratique ou livre ne peut remplacer la sagesse et l'intuition que l'on acquiert en se confrontant aux incohérences de son implémentation.
+
+## La connaissance est surcotée
+
+L'argument des défenseurs de la délégation de l'écriture de code aux agents d'IA est la quantité de connaissance emmagasinées par les modèles sous-jacents. Les boites d'IA parlent de PhD level sur tous les domaines scientifiques dans leur benchmarks pas toujours très objectifs d'ailleurs. Donc elles ont une meilleure connaissance que nous de l'implémentation. C'est limiter les problèmes rencontrés en développement logiciel à des équations à solution unique. Le génie logiciel est aussi une question de convictions et d'opinions. 
+
+Il existe plusieurs manières d'implémenter une fonctionnalité ou de résoudre un problème. Et ce qui compte n'est pas la qualité d'une solution sur un problème donnée mais l'harmonie de cette solution avec l'architecture logicielle existante et adoptée. Plus que de connaissance, c'est de cohérence que l'on a besoin dans ces cas de figure. Et pour cela que le problème n'est plus tant la capacité de raisonnement de ces modèles - quoique qu'elles sont loin d'être  suffisantes - mais leur mémoire à long terme et sur une base étendue, leur fameuse context window. C'est aujourd'hui tout une science et une ingénierie d'optimiser la mémoire des modèles. 
+
+Cependant cela ne suffit pas. Un autre ingrédient essentiel est, je trouve, assez propre aux humains et inimitables : ce sont les convictions. C'est pour cela que j'ai un grand respect pour l'écosystème Javascript : ils ont une foi profonde en ce langage et font des choses toutes plus incroyables les unes des autres pour repousser ses limites. Un langage pensé pour les navigateurs web, à l'architecture désastreuse, est utilisé pour faire du mobile, des systèmes IoT, se trouve dans de l'embarqué pour l'espace etc. Ce côté fanatique sur une technologie ou une idée justement est une garantie de cohérence dans les choix que l'on fait et elle est difficile à développer et maintenir lorsque justement l'on se détache du code qui l'incarne.
+
+## Une discipline à part
+
+Un aspect qui n'est pas assez souligné à mon goût est que la complexité des modèles et du tooling ne fait que monter en flèche au fil du temps. Ils ont d'abord été comparé à de l'auto complétion sous stéroïde et je trouve cet argument trivial. Une auto-complétion marche avec l'installation d'une extension ou la manipulation d'un script. Tu ne penses pas toute ta méthodologie de travail et ton organisation autour d'elle, ce qu nous sommes entrain de faire avec ces outils de développement.
+
+Maîtriser l'agentic coding devient un métier à part entière avec les divers fichiers markdown pour gérer la mémoire du modèle, les méthodes (je pense à la méthode B-MAD par exemple), les skills des agents[^1], les MCP à configurer, etc.. La complexité commence à devenir conséquente et continuer d'augmenter.
+
+Un développeur qui maîtrise ces outils et reste à au fait des dernières innovations n'est soit pas un junior soit un junior qui a délaissé l'acquisition des fondamentaux de son domaine pour se concentrer sur le tooling. Une analogie possible est le sport automobile. Une équipe qui gagne nécessite un bon chauffeur et une bonne voiture. Les très bons chauffeurs sont impliqués dans la construction des voitures. Mais au début de leur carrière (le karting), ils ont tous des voitures assez similaires et sans gadgets superflus pour se concentrer sur le développement de leur capacité de conduite indépendamment de la qualité de leur voiture. Et encore dans ces milieux, une bonne voiture est une voiture prédictible, elle peut être moins performante sur certains circuits selon ses caractéristiques et c'est connu et ses performances sont prévisibles, alors qu'un bon outil d'IA est un outil aux performances et à la qualité volatiles, une slot machine.
+
+## L'atrophie des compétences
+
+Les études évaluant l'impact de l'intelligence artificielle sur nos capacités cognitives se multiplient. Les résultats sont pour l'instant unanimes : l'IA est un facteur d'atrophie cognitive et diminue notre capacité de rétention d'information. L'une des plus médiatisé a été celle du MIT [^2]. L'étude montre que l'utilisation des outils d'IA résulte non seulement en une baisse de notre activité cérébrale mais également à une baisse de rétention d'informations. Alors oui, la conception logicielle ce n'est pas juste une mémorisation de syntaxe, je le concède cependant il existe une connexion certaine entre la mémoire et la créativité et le génie logiciel est à bien des égard un acte de création. 
+
+Les témoignages de développeurs également faisant part de leur prise de conscience de la baisse de leur compétence se multiplient même parmi les plus enthousiastes quant à l'adoption de cette technologie [^3].
+
+Les développeurs livrant ces témoignages sont tous des séniors ayant généralement débutés leurs carrières avant l'avènement des LLM. Qu'en est-il alors des juniors qui sont encore à une étape de construction de leurs compétences ? L'argument que l'on pourrait soulever est qu'en fait puisqu'ils ont eu à apprendre avec ces outils et n'ont rien connu d'autre alors ils en ont une meilleure utilisation et plus particulièrement ils savent l'utiliser pour leur apprentissage au profit  d'une montée en compétence plus rapide. Au premier abord, c'est le cas. Les projets de développeurs juniors sont plus ambitieux et complets indéniablement et il y a aussi un potentiel incroyable à utiliser justement l'IA avec son savoir encyclopédique pour explorer des concepts et surtout ajuster leur explication selon l'intuition de l'individu. Le problème émergent est que même dans ces phases, les hallucinations existent. Il faut alors avoir une bonne capacité de discernement et un esprit critique tout le temps en alerte. C'est cognitivement épuisant de le faire et de toute façon c'est difficile sur un sujet sur lequel on n'est pas expert de discerner ce qui est vraisemblable ou non. Et plus particulièrement sur les technologies, il y a problème de gestion des différentes versions qui peut conduire en l'utilisation de méthodes tout à fait fonctionnelles mais incohérentes entre-elles et souvent en voit de dépréciation. 
+
+## Le public cible
+
+Au vu de tout cela, le public cible de ces technologies sont les développeurs seniors voulant évoluer vers des postes managériaux. Ce sont des profils qui acceptent et savent que l'écriture du code et sa maîtrise sont une compétence à sacrifier en vue de leur évolution hiérarchique. Quelque part, l'IA est même une bouée qui leur permet de rester liés à la technique sans y consacrer autant de temps que cela. Le code n'étant de toute façon plus leur axe de contribution principal, ils peuvent se permettre une atrophie de leurs compétences dans ce domaine. Justement les profils ayant atteint ces postes hiérarchiques ont au minimum plus de dix années d'expérience et donc développé leur capacité de création de logiciel à l'ère pré-IA. Le témoignage de Simon Willison, co-créateur du framework Django et auquel l'on doit le terme d'agentic engineering, dans un podcast[^4], est assez édifiant : 
+
+> Je me rends compte que pour bien utiliser les agents de codage, je dois puiser dans le moindre centimètre de mes 25 ans d'expérience en tant qu'ingénieur logiciel
+
+Il dira également dans le même podcast :
+
+> J'obtiens d'excellents résultats avec ces outils parce qu'ils agissent comme des amplificateurs de mes compétences et de mon expérience existantes.
+
+Les outils d'IA amplifieront également le travail et les connaissances d'un junior, elles ne sont pas en mesure de faire la distinction entre un sénior et junior. Le problème est que le code produit par un junior est plein de mauvais patterns que l'IA va pousser à leur maximum. Cela résulte en un spaghetti code non maintenable or la première qualité d'un bon code est sa maintenabilité. 
+
+## IA ou pas en tant que junior
+
+Le premier point à retenir n'est pas de ne pas utiliser l'IA en tant que junior, bien au contraire. La connaissance encyclopédique de ces outils en font une excellent guide et assistant d'apprentissage. Il faut les voir comme un mentor personnel mais également garder son esprit critique face à ces outils car ils sont toujours sujets à des hallucinations. Le deuxième point est que le génie logiciel reste un domaine encore relativement expérimental et donc il n'y a pas de substitut à l'expérience, il faut alors résister à la tentation de déléguer la tâche d'écriture du code sous le prétexte que cela n'a plus de valeur. L'écriture du code doit être vue par une perspective d'apprentissage. Malgré l'invention de la calculatrice, le calcul mental est toujours enseigné à l'élémentaire et l'analyse mathématique est une part importante des mathématiques au lycée. Le but visé est la création d'un certain modèle mental ainsi que d'une intuition mathématique en plus d'une certaine rigueur méthodologique à travers ces enseignements. La même logique s'applique à mon avis au code et son rapport avec le génie logiciel. Le code en soi a perdu de sa valeur mais reste tout de même un rite de passage essentiel dans le développement d'une bonne intuition pour la création de logiciels de qualité.
+
+---
+
+[^1]: Les skills partagés par Garry Tran sont  un bon exemple de la complexification de ces outils : [Lien du repo](https://github.com/garrytan/gstack/tree/main#gstack)
+
+[^2]: L'étude du MIT : [Lien](https://www.media.mit.edu/publications/your-brain-on-chatgpt/)
+
+[^3]: L'article évoque en substance que malgré un entousiasme à adopter ces outils au départ, les développeurs interrogés voient une baisse de leur capacité à écrire du code par eux-même, [Lien de l'article](https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/)
+
+[^4]: L'épisode de Simon Willison dans Lenny's Podcast : [Lien de l'épisode](https://www.lennysnewsletter.com/p/an-ai-state-of-the-union)

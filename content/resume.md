@@ -22,9 +22,7 @@ Email : [mohamed.doucoure@protonmail.com](mailto:mohamed.doucoure@protonmail.com
 
 #### Développeur Web & Mobile / Volkeno, Sept. 2025 - Jan. 2026
 
-- Construction d'une application utilisées en interne pour le pointage des salariés de l'entreprise
-- Une autre ligne
-- Encore une autre ligne
+- Construction d'une application utilisée en interne pour le pointage des salariés de l'entreprise
 
 #### Technicien Biomédical / Ellipses Projects SAS, Déc. 2023 - Jan. 2025
 

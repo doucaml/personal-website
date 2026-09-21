@@ -1,6 +1,6 @@
 +++
 title = "À la défense d'un apprentissage old school de l'ingénierie logicielle"
-draft = false
+draft = true
 date = "2026-05-26"
 slug = "apprentissage-old-school-du-genie-logiciel"
 +++

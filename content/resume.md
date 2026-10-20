@@ -1,6 +1,6 @@
 +++
 title = "CV"
-template = "standalone-page.html"
+draft = true
 +++
 
 Je passe le plus clair de mon temps à créer des solutions logicielles.
@@ -30,7 +30,7 @@ Email : [mohamed.doucoure@protonmail.com](mailto:mohamed.doucoure@protonmail.com
 
 ## Formation
 
-#### Master en Informatique / 2024 - maintenant
+#### Master en Informatique / 2024 - 2026
 
 - Formation généraliste avec comme but l'acquisition de fondamentaux solides en informatique
 - Quelques domaines abordés : le génie logiciel, les systèmes distribués, 
@@ -38,9 +38,3 @@ Email : [mohamed.doucoure@protonmail.com](mailto:mohamed.doucoure@protonmail.com
 #### Licence en Génie Biomédical / 2020 - 2023
 
 - Formation multidisciplinaire en électronique, biophysique, sciences biomédicales et maintenance d'équipements hospitaliers
-
-## Centres d'intérêt
-
-- Littérature
-- Sports (Football, Basket, Course à pieds)
-- Cinéma

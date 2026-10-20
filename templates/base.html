@@ -4,9 +4,11 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" href="{% block style %} {% endblock style %}" />
-        <title>{% block title %} {% endblock title %} | Mohamed Doucouré</title>
-        {% block head %} {% endblock head %}
+        <link rel="stylesheet" href="{{ get_url(path="css/style.css") }}" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">        <title>{% block title %}{% endblock title %}Mohamed Doucouré</title>
+        {% block head %}{% endblock head %}
     </head>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVN75GEN8Y"></script>
@@ -19,24 +21,15 @@
 
     <body>
         <header>
-            <h2>Mohamed Doucouré</h2>
+            <span class="header-title">
+                <a href="/">Mohamed Doucouré</a>
+            </span>
 
             <nav>
-                <a href="/">Accueil</a>
-                <a href="/articles">Articles</a>
-                <a href="/projects">Projets</a>
                 <a href="/about">À propos</a>
             </nav>
         </header>
 
         <main>{% block content %} {% endblock content %}</main>
-
-        <footer>
-            <p>Mon <a href="/resume">CV</a></p>
-            <p>
-                Site réalisé avec
-                <a href="https://getzola.org" target="_blank">Zola</a>
-            </p>
-        </footer>
     </body>
 </html>

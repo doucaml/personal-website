@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 
-{% block style %} {{ get_url(path="css/index.css") }} {% endblock style %}
-
-{% block title %} {{ section.title }} {% endblock title %}
+{% block title %} {% endblock title %}
 
 {%block content %}
     <section>
@@ -10,27 +8,15 @@
     </section>
 
     <section>
-        <h2>Posts récents</h2>
+        <h1>Posts</h1>
 
-        {% set notes = get_section(path = "notes/_index.md") %}
-            {% if notes.pages %}
-            <div>
-                {{ <section.recents {...notes} /> }}
+        {% set writings = get_section(path = "writings/_index.md") %}
+        {% for writing in writings.pages %}
+            <div class="writing-item">
+                <span class="writing-date">{{  writing.date }}</span>
+                <a href="{{ writing.path }}" class="underlined-link">{{ writing.title }}</a>
             </div>
-        {% endif %}
+        {% endfor %}
 
-        {% set articles = get_section(path = "articles/_index.md") %}
-        {% if articles.pages %}
-            <div>
-                {{ <section.recents {...articles} /> }}
-            </div>
-        {% endif %}
-
-        {% set essays = get_section(path = "essays/_index.md") %}
-            {% if essays.pages %}
-            <div>
-                {{ <section.recents {...essays} /> }}
-            </div>
-        {% endif %}
     </section>
 {% endblock content %}

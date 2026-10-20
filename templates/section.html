@@ -1,17 +1,18 @@
 {% extends "base.html" %}
 
-{% block style %} {{ get_url(path="css/main.css") }} {% endblock style %}
-
-{% block title %} {{ section.title }} {% endblock title %}
+{% block title %} {{ section.title }} ⋅ {% endblock title %}
 
 {% block content %}
-    <h1>{{ section.title }}</h1>
+    <h1 class="title">{{ section.title }}</h1>
 
     <section>
         {{ section.content | safe }}
     </section>
 
     {% for page in section.pages %}
-        {{ <article.item {...page} /> }}
+        <div class="writing-item">
+            <span class="writing-date">{{  page.date }}</span>
+            <a href="{{ page.path }}" class="underlined-link">{{ page.title }}</a>
+        </div>
     {% endfor %}
 {% endblock content %}

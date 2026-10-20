@@ -1,9 +1,8 @@
 +++
 title = "Projets"
-template = "standalone-page.html"
 +++
 
-## notes.md - [Lien github](http://github.com/doucaml/notes.md)
+## NotesMD - [Lien github](http://github.com/doucaml/NotesMD)
 
 - Apllication de bureau pour la prise de notes en Markdown
 - Réalisé avec Tauri, React et React Router
@@ -14,6 +13,9 @@ template = "standalone-page.html"
 - Application mobile autour du calendrier Hijri
 - Réalisé avec React Native et Expo
 - Modules natifs développés en Kotlin - pour les widgets et l'utilisation de la bibilothèque Hijri date de Java
+- En phase de test internes sur Google Play et apk disponible par les [releases Github](https://github.com/doucaml/hijra-app/releases/tag/v1.1.1)
+
+## Bana Bana retails
 
 ## lsbasi - [Lien github](http://github.com/doucaml/lsbasi)
 

@@ -6,14 +6,14 @@ title = "Projets"
 
 - Apllication de bureau pour la prise de notes en Markdown
 - Réalisé avec Tauri, React et React Router
-- Distribué sur [Snapcraft](https://snapcraft.io/notes-md) et Homebrew en plus des releases Github
+- Distribué sur [Snapcraft](https://snapcraft.io/notes-md) et Homebrew et dans les releases Github
 
 ## Hijra - [Lien github](http://github.com/doucaml/hijra-app)
 
 - Application mobile autour du calendrier Hijri
 - Réalisé avec React Native et Expo
 - Modules natifs développés en Kotlin - pour les widgets et l'utilisation de la bibilothèque Hijri date de Java
-- En phase de test internes sur Google Play et apk disponible par les [releases Github](https://github.com/doucaml/hijra-app/releases/tag/v1.1.1)
+- En phase de test interne sur Google Play et apk disponible dans les [releases Github](https://github.com/doucaml/hijra-app/releases/tag/v1.1.1)
 
 ## LBASI - [Lien github](http://github.com/doucaml/lsbasi)
 

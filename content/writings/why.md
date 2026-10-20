@@ -3,7 +3,7 @@ title = "Le manifeste du blog"
 date = "2026-10-20"
 +++
 
-Ce premier article est un manifeste que je trahirais potentiellement.
+Ce premier billet est un manifeste que je trahirais potentiellement.
 
 J'ai envie d'inaugurer ce blog par un article sur mes motivations et mes aspirations pour cette présente entreprise.
 
@@ -15,7 +15,7 @@ Maintenant, le contenu. Il sera divers et varié entre les écrits sur mes appre
 
 Enfin, vous, cher lectorat. Que gagnerez-vous du contenu de ce blog, de ces billets ? Je ne saurais le dire, sûrement rien, la plupart du temps. Tout ce que je peux assurer c'est ce qu'il sera ou tentera d'être: des récits d'un individu naviguant sa condition humaine; libre à vous d'y attacher l'importance qui vous sied. Je peux vous assurer d'une chose: ce blog n'a pas pour objectif d'être utilitariste; il peut être considéré comme un espace de contemplation d'un autre (c'est-à-dire moi) donc de vous car parler de moi, c'est évidemment parler de vous. 
 
-Je déteste le ton solennel de ce premier billet, je tâcherai d'y remédier dans les suivants. Ce sera 
+Je déteste le ton solennel de ce premier billet, je tâcherai d'y remédier dans les suivants; ce sera asse drôle de revenir dans ce blog et de constater la pédanterie des propos.
 
 Ainsi donc, j'ai cédé à la tentation : je vais tenir un blog.
 

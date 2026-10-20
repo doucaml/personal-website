@@ -4,9 +4,9 @@ title = "À propos"
 
 Je m'appelle Mohamed Doucouré.
 
-Le langage est le point commun de mes différentes occupations, essentiellement dans sa forme écrite. J'en fais usage dans son aspect formel par la programmation informatique ainsi que mondain par divers styles d'écrits dont ceux des articles de ce présent blog.
+Mes différentes occupations tourne autour du langage, essentiellement dans sa forme écrite. J'en fais usage dans son aspect formel par la programmation informatique ainsi que mondain par divers styles d'écrits dont ceux des articles de ce présent blog.
 
-Je me définis entre autres comme un amoureux du savoir. Je nourris un intérêt prononcé pour la philosophie et l'économie. C'est, en partie, par leur prisme que je bâtis mon modèle du monde.
+Je me définis, entre autres, comme un amoureux du savoir. Je nourris un intérêt prononcé pour la philosophie et l'économie. C'est, en partie, par leur prisme que je bâtis mon modèle du monde.
 
 Enfin, j'ai un grand amour pour la littérature en général, le genre romanesque en particulier et le cinéma.
 

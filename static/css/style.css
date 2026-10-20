@@ -109,6 +109,7 @@ footer {
 .header-title {
     & > a {
         color: black;
+        font-size: large;
     }
 
     & > a:hover {

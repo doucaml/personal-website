@@ -15,8 +15,6 @@ title = "Projets"
 - Modules natifs développés en Kotlin - pour les widgets et l'utilisation de la bibilothèque Hijri date de Java
 - En phase de test internes sur Google Play et apk disponible par les [releases Github](https://github.com/doucaml/hijra-app/releases/tag/v1.1.1)
 
-## Bana Bana retails
-
 ## lsbasi - [Lien github](http://github.com/doucaml/lsbasi)
 
 - Implémentation d'un interpréteur pour le langage Pascal en JavaScript

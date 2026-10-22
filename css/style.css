@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/Montserrat.ttf") format("truetype");
+}
+
+:root {
+    --el-max-width: 750px;
+    --header-el-padding: 12px;
+    --header-tag-margin: 24px;
+    --nav-margin: 14px;
+    --link-color: oklch(37.1% 0 none);
+    --link-hover-color: brown;
+}
+
+* {
+    font-family: "Open Sans";
+}
+
+html {
+    padding: 0;
+}
+
+body {
+    margin-top: 1em;
+    margin-bottom: 8em;
+    min-height: calc(100vh - 9em);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 0 8px;
+
+    background-color: #fff6eb;
+}
+
+nav {
+    margin: var(--nav-margin) 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+
+    &:visited {
+        color: gray;
+    }
+
+    &:hover {
+        color: var(--link-hover-color);
+    }
+}
+
+ul {
+    & > li {
+        padding-top: 12px;
+    }
+
+    & :first-child {
+        padding-top: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin-top: var(--header-tag-margin);
+    margin-bottom: var(--header-tag-margin);
+}
+
+header {
+    width: 100%;
+    max-width: var(--el-max-width);
+    min-height: fit-content;
+    margin: var(--header-tag-margin) 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    width: 100%;
+    max-width: var(--el-max-width);
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: large;
+}
+
+footer {
+    width: 100%;
+    max-width: var(--el-max-width);
+    margin: 2em 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.header-title {
+    & > a {
+        color: black;
+        font-size: x-large;
+    }
+
+    & > a:hover {
+        color: var(--link-hover-color);
+    }
+}
+
+.writing-item {
+    display: flex;
+    column-gap: 1em;
+}
+
+.underlined-link {
+    color: black;
+    text-decoration: underline;
+
+    &:visited {
+        color: black;
+    }
+
+    &:hover {
+        color: var(--link-hover-color);
+    }
+}
+
+.writing-date {
+    color: darkslategray;
+}
+
+.title {
+    font-size: xx-large;
+}
+
+@media (width < 600px) {
+    .title {
+        font-size: x-large;
+    }
+}
+
+.default-title {
+    --header-margin: 16px;
+
+    margin-top: var(--header-margin);
+    margin-bottom: var(--header-margin);
+}
+
+.article-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    border: 1px solid dimgray;
+    border-radius: 12px;
+    padding: 12px;
+}

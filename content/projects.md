@@ -15,7 +15,8 @@ title = "Projets"
 - Modules natifs développés en Kotlin - pour les widgets et l'utilisation de la bibilothèque Hijri date de Java
 - En phase de test interne sur Google Play et apk disponible dans les [releases Github](https://github.com/doucaml/hijra-app/releases/tag/v1.1.1)
 
-## LBASI - [Lien github](http://github.com/doucaml/lsbasi)
+## Simple Pascal Interpreter - [Lien github](http://github.com/doucaml/lsbasi)
 
 - Implémentation d'un interpréteur pour le langage Pascal en JavaScript
+- Développé pour une meilleure compréhension des phases d'interprétation et de compilation d'un langage
 - Projet réalisé dans le cadre du suivi de la série de blog [Let's build a Simple Interpreter](https://github.com/rspivak/lsbasi#lets-build-a-simple-interpreter)
